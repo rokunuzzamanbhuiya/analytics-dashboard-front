@@ -86,7 +86,8 @@ import {
 } from "recharts";
 
 // Replace with your backend server address
-const SOCKET_SERVER_URL = "http://localhost:3001";
+// const SOCKET_SERVER_URL = "http://localhost:3001";
+const SOCKET_SERVER_URL = "https://analytics-dashboard-backend-plum.vercel.app";
 
 export default function Dashboard() {
   const [orders, setOrders] = useState([]);

@@ -14,6 +14,8 @@ import {
   BsPeopleFill,
   BsCurrencyDollar,
 } from "react-icons/bs";
+import { Icon } from '@shopify/polaris';
+import { ProductIcon, OrderIcon, CashDollarIcon, PersonIcon } from '@shopify/polaris-icons';
 
 function Home() {
   const [orders, setOrders] = useState([]);
@@ -70,7 +72,7 @@ function Home() {
         <div className="card">
           <div className="card-inner">
             <h3>Total Products</h3>
-            <BsFillArchiveFill className="card_icon" />
+            <Icon source={ProductIcon} tone="base" />
           </div>
           <h1>{products.length}</h1>
         </div>
@@ -78,7 +80,7 @@ function Home() {
         <div className="card">
           <div className="card-inner">
             <h3>Total Orders</h3>
-            <BsFillGrid3X3GapFill className="card_icon" />
+            <Icon source={OrderIcon} tone="base" />
           </div>
           <h1>{orders.length}</h1>
         </div>
@@ -86,7 +88,7 @@ function Home() {
         <div className="card">
           <div className="card-inner">
             <h3>Total Revenue</h3>
-            <BsCurrencyDollar className="card_icon" />
+            <Icon source={CashDollarIcon} tone="base" />
           </div>
           <h1>${totalRevenue.toFixed(2)}</h1>
         </div>
@@ -94,7 +96,7 @@ function Home() {
         <div className="card">
           <div className="card-inner">
             <h3>Customers</h3>
-            <BsPeopleFill className="card_icon" />
+            <Icon source={PersonIcon} tone="base" />
           </div>
           <h1>{customers.length}</h1>
         </div>

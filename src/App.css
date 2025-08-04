@@ -224,6 +224,10 @@ body.light-theme .Polaris-Page {
   background-color: #ffffff !important;
 }
 
+body.light-theme .Polaris-Icon svg {
+  color: #333333 !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -397,39 +401,29 @@ body.light-theme .main-title h3 {
   margin: 15px 0;
 }
 
+.Polaris-Icon {
+  width: 32px;
+  height: 32px;
+  margin: 0px;
+}
+
+.Polaris-Icon svg {
+  color: #fff;
+}
+
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 20px;
   padding: 8px 15px;
   border-radius: 5px;
-}
-
-.card:first-child {
-  background-color: #2962ff;
-}
-
-.card:nth-child(2) {
-  background-color: #ff6d00;
-}
-
-.card:nth-child(3) {
-  background-color: #2e7d32;
-}
-
-.card:nth-child(4) {
-  background-color: #d50000;
 }
 
 .card-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.card-inner > .card_icon {
-  font-size: 25px;
 }
 
 .charts {
